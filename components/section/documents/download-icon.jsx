@@ -5,16 +5,16 @@ const DownloadIcon = () => {
     <a
     target="_blank"
     href="/documents/Nemanja Dragun - Resume.pdf"
-    download=""
+    download
     aria-label="Download resume"
-    class="flex items-center justify-center w-10 h-10 bg-yellow-500 dark:bg-yellow-400 bg-opacity-20 dark:bg-opacity-20 border border-yellow-500 dark:border-yellow-600 border-opacity-20 hover:border-yellow-500 dark:hover:border-yellow-400 rounded-full"
+    className="flex items-center justify-center w-10 h-10 bg-cyan-500 dark:bg-cyan-400 bg-opacity-20 dark:bg-opacity-20 border border-cyan-500 dark:border-yellow-600 border-opacity-20 hover:border-yellow-500 dark:hover:border-yellow-400 rounded-full"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       aria-hidden="true"
       role="img"
-      class="icon text-yellow-400 dark:text-yellow-800"
+      className="icon text-blue-400 dark:text-blue-800"
       width="22px"
       height="22px"
       viewBox="0 0 24 24"

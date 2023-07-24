@@ -1,20 +1,51 @@
-import React from 'react'
-import Container from '@/components/container'
-import DownloadIcon from '@/components/download-icon'
-import { FaRegFilePdf } from "react-icons/fa"
-import GradientBg from '@/components/gradient-bg'
-
+import React from "react";
+import Head from "next/head";
+// components
+import GradientBg from "@/components/general/gradientBgtop";
+import Documents from "@/components/section/documents/documents";
+import PersonalInformation from "@/components/section/informations/informations";
+import Skills from "@/components/section/skills/skills";
+import Language from "@/components/section/languages/language";
+import Contact from "@/components/section/contact/contact";
+import Navbar from "@/components/navigation/navbar";
+import Projects from "@/components/section/projects experience/projects";
+import Professional from "@/components/section/profesional experience/professional";
+import Education from "@/components/section/education/education";
+import AboutMe from "@/components/section/about/about-me";
+import Certification from "@/components/section/certification/certification";
+import Tools from "@/components/section/tools/tools";
 
 const Home = () => {
   return (
-    <main>
-    <GradientBg/>
-      <Container>
-        <p>Children</p>
-      </Container>
+    <>
+      <Head>
+        <title>Agil Saputra</title>
+      </Head>
+      <GradientBg />
+      <Navbar />
+      <div className="px-4 container mx-auto flex flex-col gap-4 flex-1 mb-10">
+        <div className="flex gap-6 flex-col lg:flex-row h-fit">
+          <aside className="w-full lg:w-[360px] h-fit">
+            <Contact />
+            <div className="flex flex-col gap-6 lg:sticky lg:top-10">
+              <Documents />
+              <PersonalInformation />
+              <Skills />
+              <Tools />
+              <Language />
+            </div>
+          </aside>
+          <main className="flex-1 flex flex-col gap-6">
+            <AboutMe />
+            <Projects />
+            <Professional />
+            <Education />
+            <Certification />
+          </main>
+        </div>
+      </div>
+    </>
+  );
+};
 
-    </main>
-  )
-}
-
-export default Home
+export default Home;
