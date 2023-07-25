@@ -45,7 +45,7 @@ const Home = () => {
           </main>
         </div>
       </div>
-      <GradientBgDown />
+      {/* <GradientBgDown /> */}
     </>
   );
 };

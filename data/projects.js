@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    title: "Elmart Ecommerce App",
+    title: "Elmart Electronics Store",
     link: "https://elemart-ecommerce-app.vercel.app/",
 	github: "https://github.com/Agil-Saputra/Elmart-Ecommerce-App/#readme",
     image: [""],

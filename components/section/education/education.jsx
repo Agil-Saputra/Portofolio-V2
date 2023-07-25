@@ -2,7 +2,7 @@ import React from "react";
 import Container from "@/components/general/container";
 import { MdOutlineDateRange, MdLocationPin } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa";
-import { GrScorecard } from "react-icons/gr";
+
 const Education = () => {
   return (
     <Container emoji="📚" title="Education">
