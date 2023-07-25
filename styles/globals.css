@@ -42,5 +42,5 @@
 }
 
 .paragraph-light {
-	@apply font-[250] text-[.875rem] leading-[1.5rem]
+	@apply font-[350] text-[.875rem] leading-[1.5rem]
 }

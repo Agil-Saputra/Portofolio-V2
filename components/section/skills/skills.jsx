@@ -3,31 +3,28 @@ import Container from "@/components/general/container";
 import Skill from "@/components/general/skill-chip";
 
 const Skills = () => {
+	const frontEnd = ["React", "Next.js", "Typescript", "Sass", "Tailwind", "Material UI", "Ant Design"]
+	const backend = ["Strapi", "Contentful", "Node.js"]
+	const testing = ["React Testing Libary", "Jest"]
   return (
     <Container emoji='💻' title="Skills">
       <h2 className="font-semibold mb-2">Front End</h2>
       <div className="flex flex-wrap gap-2 mb-1">
-        <Skill title="Next.js" />
-        <Skill title="Javascript" />
-        <Skill title="HTML" />
-        <Skill title="CSS" />
-        <Skill title="React" />
+        {frontEnd.map((skill, i) => (
+			<Skill key={i} title={skill} />
+		))}
       </div>
       <h2 className="font-semibold mb-2">Back End</h2>
       <div className="flex flex-wrap gap-2 mb-1">
-        <Skill title="Next.js" />
-        <Skill title="Javascript" />
-        <Skill title="HTML" />
-        <Skill title="CSS" />
-        <Skill title="React" />
+	  {backend.map((skill, i) => (
+			<Skill key={i} title={skill} />
+		))}
       </div>
       <h2 className="font-semibold mb-2">Testing</h2>
       <div className="flex flex-wrap gap-2 mb-1">
-        <Skill title="Next.js" />
-        <Skill title="Javascript" />
-        <Skill title="HTML" />
-        <Skill title="CSS" />
-        <Skill title="React" />
+	  {testing.map((skill, i) => (
+			<Skill key={i} title={skill} />
+		))}
       </div>
     </Container>
   );

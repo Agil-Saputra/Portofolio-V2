@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
 // components
-import GradientBg from "@/components/general/gradientBgtop";
+import GradientBgTop from "@/components/general/gradientBgTop";
+import GradientBgDown from "@/components/general/gradientBgDown";
 import Documents from "@/components/section/documents/documents";
 import PersonalInformation from "@/components/section/informations/informations";
 import Skills from "@/components/section/skills/skills";
@@ -21,11 +22,11 @@ const Home = () => {
       <Head>
         <title>Agil Saputra</title>
       </Head>
-      <GradientBg />
+      <GradientBgTop />
       <Navbar />
       <div className="px-4 container mx-auto flex flex-col gap-4 flex-1 mb-10">
         <div className="flex gap-6 flex-col lg:flex-row h-fit">
-          <aside className="w-full lg:w-[360px] h-fit">
+          <aside className="w-full lg:w-[22.5rem] h-fit">
             <Contact />
             <div className="flex flex-col gap-6 lg:sticky lg:top-10">
               <Documents />
@@ -37,13 +38,14 @@ const Home = () => {
           </aside>
           <main className="flex-1 flex flex-col gap-6">
             <AboutMe />
-            <Projects />
             <Professional />
+            <Projects />
             <Education />
             <Certification />
           </main>
         </div>
       </div>
+      <GradientBgDown />
     </>
   );
 };

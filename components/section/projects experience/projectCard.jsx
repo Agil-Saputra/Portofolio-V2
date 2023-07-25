@@ -73,7 +73,7 @@ const Project = ({
         </div>
       </div>
       <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
-        <div className="bg-zinc-950 border border-zinc-800 rounded-lg w-14 h-14 flex items-center justify-center float-left"></div>
+        <div className="bg-zinc-950 border border-zinc-800 rounded-lg w-20 h-16 flex items-center justify-center float-left"></div>
         <div className="w-full">
           <div className="flex max-md:flex-col justify-between items-start w-full">
             <div>
@@ -108,7 +108,7 @@ const Project = ({
                 {iconProjectKind(projectKind)}
                 {projectKind}
               </div>
-              <p className="flex items-center gap-2 text-sm border rounded-md p-1">
+              <p className="flex items-center gap-2 text-sm border rounded-md p-1 capitalize">
                 <MdOutlineDateRange />
                 {date}
               </p>

@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "@/components/general/container";
-import { MdOutlineDateRange } from "react-icons/md";
+import { MdOutlineDateRange, MdLocationPin } from "react-icons/md";
 import { BiTimeFive, BiWorld } from "react-icons/bi";
-import { ImOffice, ImLocation } from "react-icons/im";
+import { ImOffice } from "react-icons/im";
 
 const Professional = () => {
   return (
@@ -21,14 +21,14 @@ const Professional = () => {
                   Jasa Inti Solusi Sukses
                 </p>
                 <p className="flex items-center gap-2 text-sm border rounded-md p-1">
-                  <ImLocation />
+                  <MdLocationPin />
                   Belitang, Palembang
                 </p>
                 <a
                   className="flex items-center gap-1 text-md text-cyan-600 cursor-pointer hover:bg-slate-200 hover:border-black hover:scale-105 border px-2 rounded-md"
                 >
-                  jiss.site
                   <BiWorld />
+                  jiss.site
                 </a>
               </div>
             </div>
@@ -38,7 +38,7 @@ const Professional = () => {
                 <BiTimeFive />
                 Full Time
               </div>
-              <p className="flex items-center gap-2 text-sm border rounded-md p-1">
+              <p className="flex items-center gap-2 text-sm border rounded-md p-1 capitalize">
                 <MdOutlineDateRange />
                 july 2023 - august 2023
               </p>

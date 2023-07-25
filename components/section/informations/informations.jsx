@@ -17,7 +17,7 @@ const PersonalInformation = () => {
 		  icon='💌'
         />
 		<Info 
-			title={<p>Home Office</p>}
+			title={<p>Home/Office</p>}
 			type='work type'
 			icon='🏢'
 		/>
