@@ -6,7 +6,6 @@ import { projectsData } from "@/data/projects";
 const Projects = () => {
   return (
     <Container emoji="🗂️" title="Projects Experience">
-      <hr className="border-dashed" />
       {projectsData.map((item, i) => {
         const {
           title,
@@ -18,6 +17,7 @@ const Projects = () => {
           date,
           kind,
           shortDescription,
+		  logo
         } = item;
         return (
           <Project
@@ -26,6 +26,7 @@ const Projects = () => {
             description={description}
             shortDescription={shortDescription}
             image={image}
+			logo={logo}
             githubLink={github}
             projectUrl={link}
             projectKind={kind}

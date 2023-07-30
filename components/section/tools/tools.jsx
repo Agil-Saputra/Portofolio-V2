@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "@/components/general/container";
-import Chip from "@/components/general/skill-chip";
+import SkillBadge from "@/components/general/badges/skillBadge";
 
 const Tools = () => {
   const tools = [
@@ -15,7 +15,7 @@ const Tools = () => {
     <Container emoji="🛠️" title="Tools">
       <div className="flex flex-wrap gap-2 mb-1">
         {tools.map((item, i) => (
-          <Chip key={i} title={item} />
+          <SkillBadge key={i} title={item} />
         ))}
       </div>
     </Container>

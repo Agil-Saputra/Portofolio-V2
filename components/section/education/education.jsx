@@ -2,12 +2,13 @@ import React from "react";
 import Container from "@/components/general/container";
 import { MdOutlineDateRange, MdLocationPin } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa";
-
+import amikom from "@/assets/amikom.png"
+import ImageLogo from "@/components/general/image";
 const Education = () => {
   return (
     <Container emoji="📚" title="Education">
       <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
-        <div className="bg-zinc-950 border border-zinc-800 rounded-lg w-20 h-16 flex items-center justify-center"></div>
+	  <ImageLogo src={amikom} alt="Jasa Inti Solusi Sukses"/>
         <div className="w-full">
           <div className="flex max-md:flex-col justify-between items-start w-full">
             <div>

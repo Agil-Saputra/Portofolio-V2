@@ -3,12 +3,13 @@ import Container from "@/components/general/container";
 import { MdOutlineDateRange, MdLocationPin } from "react-icons/md";
 import { BiTimeFive, BiWorld } from "react-icons/bi";
 import { ImOffice } from "react-icons/im";
-
+import jiss from "@/assets/jiss.png"
+import ImageLogo from "@/components/general/image";
 const Professional = () => {
   return (
     <Container emoji="💼" title="Professional Experience">
       <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
-        <div className="bg-zinc-950 border border-zinc-800 rounded-lg w-20 h-16 flex items-center justify-center"></div>
+	  <ImageLogo src={jiss} alt="Jasa Inti Solusi Sukses"/>
         <div className="w-full">
           <div className="flex max-md:flex-col justify-between items-start w-full">
             <div>

@@ -1,5 +1,9 @@
+// react
 import React, { useState, useEffect  } from "react";
-import Skill from "../../general/skill-chip";
+// components
+import ImageLogo from "@/components/general/image";
+import SkillBadge from "@/components/general/badges/skillBadge";
+// icons
 import { BiWorld, BiDetail } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 import { IoMdCloseCircle } from "react-icons/io";
@@ -17,6 +21,7 @@ const Project = ({
   projectUrl,
   projectKind,
   skills,
+  logo
 }) => {
   const [showDiv, setShowDiv] = useState(false);
 
@@ -73,7 +78,7 @@ const Project = ({
         </div>
       </div>
       <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
-        <div className="bg-zinc-950 border border-zinc-800 rounded-lg w-20 h-16 flex items-center justify-center float-left"></div>
+		<ImageLogo src={logo} alt={projectTitle}/>
         <div className="w-full">
           <div className="flex max-md:flex-col justify-between items-start w-full">
             <div>
@@ -116,7 +121,7 @@ const Project = ({
           </div>
           <div className="flex gap-2 flex-wrap md:mb-2 max-md:my-2">
 			{skills?.map((skill, i) => (
-				<Skill key={i} title={skill}/>
+				<SkillBadge key={i} title={skill}/>
 			))}
           </div>
           <p className="paragraph-light">{shortDescription}</p>

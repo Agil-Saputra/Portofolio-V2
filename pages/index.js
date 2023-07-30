@@ -20,6 +20,7 @@ const Home = () => {
     <>
       <Head>
         <title>Agil Saputra</title>
+		<link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <GradientBg />
       <Navbar />

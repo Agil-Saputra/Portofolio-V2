@@ -1,15 +1,22 @@
-import Container from '@/components/general/container'
-import React from 'react'
-import { MdMilitaryTech } from 'react-icons/md'
-import {TiArrowForward} from "react-icons/ti"
-import { MdOutlineDateRange } from 'react-icons/md'
-import {SiSololearn} from "react-icons/si"
-
+// react
+import React from "react";
+// componets
+import Container from "@/components/general/container";
+import ImageLogo from "@/components/general/image";
+import LinkForward from "@/components/general/linkForward";
+import BasicBadge from "@/components/general/badges/basicBadge";
+import DateBadge from "@/components/general/badges/dateBadge";
+import BoldBadge from "@/components/general/badges/boldBadge";
+// icons and Images
+import { MdMilitaryTech } from "react-icons/md";
+import { TiArrowForward } from "react-icons/ti";
+import { SiSololearn } from "react-icons/si";
+import soloLearn from "@/assets/sololearn.webp";
 const Certification = () => {
   return (
     <Container title="📑 Certification">
-		 <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
-        <div className="bg-zinc-950 border border-zinc-800 rounded-lg w-20 h-16 flex items-center justify-center"></div>
+      <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
+        <ImageLogo src={soloLearn} alt="SoloLearn Image" />
         <div className="w-full">
           <div className="flex max-md:flex-col justify-between items-start w-full">
             <div>
@@ -17,32 +24,15 @@ const Certification = () => {
                 Sololearn Javascript Intermediate
               </h3>
               <div className="flex flex-wrap gap-2 items-center max-md:my-2">
-                <p className="flex items-center gap-2 text-sm border rounded-md p-1 ">
-                
-                  JavaScript
-				  <MdMilitaryTech/>
-                </p>
-                <p className="flex items-center gap-2 text-sm border rounded-md p-1 ">      
-                  Sololearn
-				  <SiSololearn/>
-                </p>
-				<a
-                  className="flex items-center gap-1 text-sm text-cyan-600 cursor-pointer hover:bg-slate-200 hover:border-black hover:scale-105 border px-2 py-1 rounded-md"
-                >
-                  Credential
-                  <TiArrowForward />
-                </a>
+				<BasicBadge title="JavaScript" icon={ <MdMilitaryTech />}/>
+				<BasicBadge title="SoloLearn" icon={<SiSololearn />}/>
+                <LinkForward title="Credential" icon={<TiArrowForward />} href={"/"} />
               </div>
             </div>
 
             <div className="flex flex-col md:items-end">
-              <div className="flex rounded-md justify-center items-center gap-2 text-[14px] px-2 border-[1px] border-yellow-400 bg-yellow-100 text-yellow-600 mb-1 w-fit">
-                ID: CC-ZN8ET1H1
-              </div>
-              <p className="flex items-center gap-2 text-sm border rounded-md p-1 capitalize">
-				<MdOutlineDateRange/>
-                13 June 2023
-              </p>
+			  <BoldBadge title="ID: CC-ZN8ET1H1"/>
+			  <DateBadge title="13 June 2023"/>
             </div>
           </div>
           <p className="paragraph-light">
@@ -53,8 +43,8 @@ const Certification = () => {
         </div>
       </div>
       <hr className="border-dashed" />
-	</Container>
-  )
-}
+    </Container>
+  );
+};
 
-export default Certification
+export default Certification;
