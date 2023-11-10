@@ -10,23 +10,18 @@ const font = Righteous({
 	subsets: ["latin"],
   });
 
-import { MdDarkMode, MdLightMode } from 'react-icons/md'
 const Navbar = () => {
   return (
-    <nav className='w-full mb-4 p-4 mx-auto container z-10 flex justify-between'>
-	   <div className='flex items-start gap-2'>
-		<Image src={logo} alt='agils logo' width={30} height={30} className='max-w-[2rem]'/>
-		<p className={`text-[1.45rem] max-[400px]:hidden ${font.className}`}>Agil Saputra.tech</p>
+    <nav className='container z-10 flex justify-between w-full p-4 mx-auto mb-4'>
+	   <div className='flex items-start gap-2 '>
+		<Image src={logo} alt='agils logo' width={30} height={30} className='max-w-[2rem] '/>
 	   </div>
-	   <div className='flex gap-3 items-center'>
-		<button className='hover:bg-slate-200 p-2 rounded-2xl'>
-			<MdLightMode/>
+	   <div className='flex items-center gap-3'>
+		<button >
+			<Image className='w-[2rem] h-[2rem] ' src={Indonesian} alt="bahasa indonesia" />
 		</button>
 		<button >
-			<Image className='w-[2rem] h-auto' src={Indonesian} alt="bahasa indonesia" />
-		</button>
-		<button >
-		<Image className='w-[2rem] h-auto' src={English} alt="English" />
+		<Image className='w-[2rem] h-[2rem]' src={English} alt="English" />
 		</button>
 	   </div>
     </nav>

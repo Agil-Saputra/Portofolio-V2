@@ -3,31 +3,29 @@ import Container from "@/components/general/container";
 import { MdOutlineDateRange, MdLocationPin } from "react-icons/md";
 import { BiTimeFive, BiWorld } from "react-icons/bi";
 import { ImOffice } from "react-icons/im";
-import jiss from "@/assets/jiss.png"
+import jiss from "@/assets/jiss.png";
 import ImageLogo from "@/components/general/image";
 const Professional = () => {
   return (
     <Container emoji="💼" title="Professional Experience">
-      <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
-	  <ImageLogo src={jiss} alt="Jasa Inti Solusi Sukses"/>
+      <div className="items-start w-full gap-4 mt-3 mb-6 md:flex">
+        <ImageLogo src={jiss} alt="Jasa Inti Solusi Sukses" />
         <div className="w-full">
-          <div className="flex max-md:flex-col justify-between items-start w-full">
+          <div className="flex items-start justify-between w-full max-md:flex-col">
             <div>
-              <h3 className="font-medium text-md capitalize">
+              <h3 className="font-medium capitalize text-md">
                 Front End Developer
               </h3>
-              <div className="flex flex-wrap gap-2 items-center max-md:my-2">
-                <p className="flex items-center gap-2 text-sm border rounded-md p-1">
+              <div className="flex flex-wrap items-center gap-2 max-md:my-2">
+                <p className="flex items-center gap-2 p-1 text-sm border rounded-md">
                   <ImOffice />
                   Jasa Inti Solusi Sukses
                 </p>
-                <p className="flex items-center gap-2 text-sm border rounded-md p-1">
+                <p className="flex items-center gap-2 p-1 text-sm border rounded-md">
                   <MdLocationPin />
                   Belitang, Palembang
                 </p>
-                <a
-                  className="flex items-center gap-1 text-md text-cyan-600 cursor-pointer hover:bg-slate-200 hover:border-black hover:scale-105 border px-2 rounded-md"
-                >
+                <a className="flex items-center gap-1 px-2 border rounded-md cursor-pointer text-md text-cyan-600 hover:bg-slate-200 hover:border-black hover:scale-105">
                   <BiWorld />
                   jiss.site
                 </a>
@@ -39,16 +37,20 @@ const Professional = () => {
                 <BiTimeFive />
                 Full Time
               </div>
-              <p className="flex items-center gap-2 text-sm border rounded-md p-1 capitalize">
+              <p className="flex items-center gap-2 p-1 text-sm capitalize border rounded-md">
                 <MdOutlineDateRange />
                 july 2023 - august 2023
               </p>
             </div>
           </div>
           <p className="paragraph-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            molestias culpa sed beatae labore pariatur aliquid, assumenda atque
-            deleniti dolor?
+            • Designing and crafting cutting-edge business sites using Next.js
+            technology, revolutionizing company online presence for marketing
+            with sleek, efficient, and user-friendly interfaces. 
+			<br/>
+			• Implementing a robust maintenance plan to ensure company website remains at the
+            forefront of technology, consistently updating components to
+            guarantee optimal performance and user satisfaction. 
           </p>
         </div>
       </div>

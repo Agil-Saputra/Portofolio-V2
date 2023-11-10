@@ -8,7 +8,7 @@ const Contact = () => {
     return (
       <a
         href={link}
-        className="px-3 text-sm py-2 border-[1px] bg-white border-slate-300 hover:border-black cursor-pointer rounded-lg flex gap-1 items-center"
+        className="flex items-center gap-1 px-3 py-2 text-sm bg-white border border-black rounded-lg shadow-lg cursor-pointer hover:border-black"
       >
         {title}
         {icon}
@@ -17,20 +17,20 @@ const Contact = () => {
   }
   return (
     <>
-      <div className="flex gap-4 mb-6 items-center md:items-start">
-        <div className="w-[6.25rem] h-[6.25rem]">
+      <div className="flex items-center gap-4 mb-2 md:items-start">
+        <div className="w-[6.25rem] h-[6.25rem] before:content-[''] before:h-[2rem] before:[2rem] before:bg-red-600 before:absolute before:left-0 before:top-0">
           <Image
             src={profile}
             alt="Profile Photo"
             width={100}
             height={90}
-            className="rounded-md w-full h-full object-cover"
+            className="object-cover w-full h-full border-2 border-black rounded-md "
           />
         </div>
         <div>
-          <h2 className="font-semibold text-[1.8rem]">Agil Saputra</h2>
-          <p className="text-md paragraph-light">Front End Developer</p>
-          <div className="my-4 flex flex-wrap gap-1 max-sm:hidden">
+          <h2 className="font-semibold text-[1.8rem] text-slate-50">Agil Saputra</h2>
+          <p className="text-md paragraph-light text-slate-50">Front End Developer</p>
+          <div className="flex flex-wrap gap-1 my-4 max-sm:hidden">
             <LinkContainer
               title="GitHub"
               link="https://github.com/Agil-Saputra/"
@@ -44,7 +44,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="my-4 flex flex-wrap justify-center gap-1 sm:hidden">
+      <div className="flex flex-wrap justify-center gap-1 my-4 sm:hidden">
         <LinkContainer
           title="GitHub"
           link="https://github.com/Agil-Saputra/"
