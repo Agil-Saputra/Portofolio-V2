@@ -4,6 +4,7 @@ import Indonesian from "@/assets/ind.svg";
 import logo from "@/assets/logo.svg"
 import Image from 'next/image';
 import { Bebas_Neue, Amatic_SC, Righteous }  from "next/font/google"
+import Link from 'next/link';
 
 const font = Righteous({
 	weight: "400",
@@ -17,12 +18,12 @@ const Navbar = () => {
 		<Image src={logo} alt='agils logo' width={30} height={30} className='max-w-[2rem] '/>
 	   </div>
 	   <div className='flex items-center gap-3'>
-		<button >
+		<Link href='/' locale='id'>
 			<Image className='w-[2rem] h-[2rem] ' src={Indonesian} alt="bahasa indonesia" />
-		</button>
-		<button >
+		</Link>
+		<Link href='/' locale='en'>
 		<Image className='w-[2rem] h-[2rem]' src={English} alt="English" />
-		</button>
+		</Link>
 	   </div>
     </nav>
   )

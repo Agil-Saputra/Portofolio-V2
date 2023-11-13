@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 // components
 import GradientBg from "@/components/general/gradientBackground/gradientBg";
 import Documents from "@/components/section/documents/documents";
@@ -14,10 +15,23 @@ import Education from "@/components/section/education/education";
 import AboutMe from "@/components/section/about/about-me";
 import Certification from "@/components/section/certification/certification";
 import Tools from "@/components/section/tools/tools";
+import { getMessages } from "@/utils/ii8n";
+import { IntlProvider, FormattedMessage } from 'react-intl';
 
-const Home = () => {
+export async function getStaticProps({ locale }) {
+	return {
+	  props: {
+		locale: locale,
+		messages: await getMessages(locale, 'default')
+	  }
+	};
+  }
+  
+
+const Home = ({locale, messages}) => {
   return (
-    <>
+    <IntlProvider messages={messages} locale={locale}>
+		
       <Head>
         <title>Agil Saputra</title>
 		<link rel="shortcut icon" href="/logo.svg" />
@@ -25,8 +39,8 @@ const Home = () => {
       <GradientBg />
       <Navbar />
       <div className="container flex flex-col flex-1 gap-4 px-4 mx-auto mb-10">
-        <div className="flex flex-col gap-6 lg:flex-row h-fit">
-          <aside className="w-full lg:w-[22.5rem] h-fit">
+        <div className="flex flex-col gap-6 lg:flex-row">
+          <aside className="w-full lg:w-[22.5rem]">
             <Contact />
             <div className="flex flex-col gap-6 lg:sticky lg:top-10">
               <Documents />
@@ -37,7 +51,8 @@ const Home = () => {
             </div>
           </aside>
           <main className="flex flex-col flex-1 gap-6">
-            <AboutMe />
+            <AboutMe description={<FormattedMessage id="description"/>}/>
+		
             <Projects />
             <Professional />
             <Education />
@@ -45,7 +60,7 @@ const Home = () => {
           </main>
         </div>
       </div>
-    </>
+    </IntlProvider>
   );
 };
 

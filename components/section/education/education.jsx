@@ -7,20 +7,20 @@ import ImageLogo from "@/components/general/image";
 const Education = () => {
   return (
     <Container emoji="📚" title="Education">
-      <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
+      <div className="items-start w-full gap-4 mt-3 mb-6 md:flex">
 	  <ImageLogo src={amikom} alt="Jasa Inti Solusi Sukses"/>
         <div className="w-full">
-          <div className="flex max-md:flex-col justify-between items-start w-full">
+          <div className="flex items-start justify-between w-full max-md:flex-col">
             <div>
-              <h3 className="font-medium text-md capitalize">
+              <h3 className="font-medium capitalize text-md">
                 Amikom University
               </h3>
-              <div className="flex flex-wrap gap-2 items-center max-md:my-2">
-                <p className="flex items-center gap-2 text-sm border rounded-md p-1 ">
+              <div className="flex flex-wrap items-center gap-2 max-md:my-2">
+                <p className="flex items-center gap-2 p-1 text-sm border rounded-md ">
                   <FaGraduationCap />
                   Bachelor&apos;s of Computer Science
                 </p>
-                <p className="flex items-center gap-2 text-sm border rounded-md p-1">
+                <p className="flex items-center gap-2 p-1 text-sm border rounded-md">
                   <MdLocationPin />
                   DI Yogyakarta
                 </p>
@@ -32,16 +32,13 @@ const Education = () => {
                 {/* <GrScorecard/> */}
                 GPA: 3.78
               </div>
-              <p className="flex items-center gap-2 text-sm border rounded-md p-1 capitalize">
+              <p className="flex items-center gap-2 p-1 text-sm capitalize border rounded-md">
                 <MdOutlineDateRange />
                 august 2023 - December 2025
               </p>
             </div>
           </div>
           <p className="paragraph-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            molestias culpa sed beatae labore pariatur aliquid, assumenda atque
-            deleniti dolor?
           </p>
         </div>
       </div>

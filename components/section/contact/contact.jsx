@@ -24,7 +24,7 @@ const Contact = () => {
             alt="Profile Photo"
             width={100}
             height={90}
-            className="object-cover w-full h-full border-2 border-black rounded-md "
+            className="object-cover w-full h-full border-2 border-black rounded-[1000px] "
           />
         </div>
         <div>

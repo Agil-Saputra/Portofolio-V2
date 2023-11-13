@@ -15,15 +15,15 @@ import soloLearn from "@/assets/sololearn.webp";
 const Certification = () => {
   return (
     <Container title="📑 Certification">
-      <div className="md:flex items-start gap-4 w-full mb-6 mt-3">
+      <div className="items-start w-full gap-4 mt-3 mb-6 md:flex">
         <ImageLogo src={soloLearn} alt="SoloLearn Image" />
         <div className="w-full">
-          <div className="flex max-md:flex-col justify-between items-start w-full">
+          <div className="flex items-start justify-between w-full max-md:flex-col">
             <div>
-              <h3 className="font-medium text-md capitalize">
+              <h3 className="font-medium capitalize text-md">
                 Sololearn Javascript Intermediate
               </h3>
-              <div className="flex flex-wrap gap-2 items-center max-md:my-2">
+              <div className="flex flex-wrap items-center gap-2 max-md:my-2">
 				<BasicBadge title="JavaScript" icon={ <MdMilitaryTech />}/>
 				<BasicBadge title="SoloLearn" icon={<SiSololearn />}/>
                 <LinkForward title="Credential" icon={<TiArrowForward />} href={"/"} />
@@ -36,9 +36,7 @@ const Certification = () => {
             </div>
           </div>
           <p className="paragraph-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            molestias culpa sed beatae labore pariatur aliquid, assumenda atque
-            deleniti dolor?
+    
           </p>
         </div>
       </div>

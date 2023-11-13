@@ -5,6 +5,7 @@ import Indonesian from "@/assets/ind.svg";
 import Image from "next/image";
 import Icon from "@/components/general/icon";
 
+
 const Language = () => {
   return (
     <Container title="Languages">
@@ -19,16 +20,15 @@ const Language = () => {
           </div>
         </div>
         <div className="flex items-center gap-3">
-        <Icon>
-          <Image src={Indonesian} alt="indonesian" width={40} height={40} />
-        </Icon>
+          <Icon>
+            <Image src={Indonesian} alt="indonesian" width={40} height={40} />
+          </Icon>
           <div>
             <p className="font-semibold">Indonesia</p>
             <p className="text-[12px]">Native / Billingual Proficiency</p>
           </div>
         </div>
       </div>
-     
     </Container>
   );
 };

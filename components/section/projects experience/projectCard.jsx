@@ -60,9 +60,7 @@ const Project = ({
     <>
       {showDiv && (
         <div
-          className={
-            " origin-center transition-all duration-75 ease-in-out fixed left-0 top-0 w-screen h-screen grid place-items-center z-50 p-4"
-          }
+          className={"origin-center transition-all duration-75 ease-in-out fixed left-0 top-0 w-screen h-screen grid place-items-center z-50 p-4"}
         >
           <div className=" p-4 bg-white border-gray-300 border-[1px] rounded-md  shadow-3xl overflow-scroll max-h-[400px] md:max-h-[40.625rem] container mx-auto">
             <div className="sticky top-0 flex items-center justify-between px-2 mb-4 backdrop-blur-md rounded-2xl">
@@ -88,7 +86,7 @@ const Project = ({
         </div>
       )}
 
-      <div className="w-full p-3 border rounded-md shadow-md ">
+      <div className="w-full p-3 border rounded-md ">
         <div className="flex items-center gap-2">
           <ImageLogo src={logo} alt={projectTitle} />
           <h3 className="font-medium capitalize text-md">{projectTitle}</h3>
